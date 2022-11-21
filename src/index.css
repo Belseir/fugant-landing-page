@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background: -webkit-linear-gradient(157.79deg, #0F2027 -3.8%, #203A43 49.34%, #2C5364 105.92%);
+    background: -o-linear-gradient(157.79deg, #0F2027 -3.8%, #203A43 49.34%, #2C5364 105.92%);
+    background: -moz-linear-gradient(157.79deg, #0F2027 -3.8%, #203A43 49.34%, #2C5364 105.92%);
+    background: linear-gradient(157.79deg, #0F2027 -3.8%, #203A43 49.34%, #2C5364 105.92%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    overflow: hidden;
+}
+
+.background-gradient {
+    background: linear-gradient(157.79deg, #0F2027 -3.8%, #203A43 49.34%, #2C5364 105.92%);
+}
