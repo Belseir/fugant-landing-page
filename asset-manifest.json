@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/fugant-landing-page/static/css/main.30f07997.css",
+    "main.js": "/fugant-landing-page/static/js/main.b1b3d763.js",
+    "static/media/render.png": "/fugant-landing-page/static/media/render.d5b0992d0b52b16d59eb.png",
+    "index.html": "/fugant-landing-page/index.html",
+    "main.30f07997.css.map": "/fugant-landing-page/static/css/main.30f07997.css.map",
+    "main.b1b3d763.js.map": "/fugant-landing-page/static/js/main.b1b3d763.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30f07997.css",
+    "static/js/main.b1b3d763.js"
+  ]
+}
