@@ -38,7 +38,11 @@ const MainSection = forwardRef<HTMLHeadingElement>((_, ref) => {
             solo
             <span className="text-[#2FA9F0]"> $6864.00</span>
           </p>
-          <Button content="Adquiere Fugant" onClick={openInstagram} />
+          <Button
+            content="Adquiere Fugant"
+            className="text-white"
+            onClick={openInstagram}
+          />
         </div>
       </div>
     </section>
