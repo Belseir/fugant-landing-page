@@ -3,6 +3,10 @@ import render from "../assets/render.png";
 import { forwardRef } from "react";
 
 const MainSection = forwardRef<HTMLHeadingElement>((_, ref) => {
+  const openInstagram = () => {
+    window.open("https://www.instagram.com/fugant2022/", "_blank");
+  };
+
   return (
     <section className="snap-center w-full h-screen">
       <div className="flex flex-col justify-between px-[50px] py-[4.5rem] lg:py-[9rem] h-full p-4">
@@ -34,7 +38,7 @@ const MainSection = forwardRef<HTMLHeadingElement>((_, ref) => {
             solo
             <span className="text-[#2FA9F0]"> $6864.00</span>
           </p>
-          <Button content="Adquiere Fugant" />
+          <Button content="Adquiere Fugant" onClick={openInstagram} />
         </div>
       </div>
     </section>
