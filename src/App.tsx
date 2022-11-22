@@ -1,4 +1,3 @@
-import "./index";
 import Logo from "./components/Logo";
 import MainSection from "./components/MainSection";
 import ProductSection from "./components/ProductSection";

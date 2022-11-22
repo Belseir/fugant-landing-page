@@ -19,7 +19,7 @@ const useIsInViewport = (
     return () => {
       if (element.current) observer.unobserve(element.current);
     };
-  }, []);
+  }, [element, options]);
 
   return {
     visible,

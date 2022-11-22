@@ -1,10 +1,9 @@
 {
   "name": "fugant-landing-page",
   "version": "0.1.0",
-  "homepage": "https://futrykfabricio.github.io/fugant-landing-page",
   "private": true,
   "dependencies": {
-    "@react-three/drei": "^9.41.3",
+    "@react-three/drei": "^9.42.2",
     "@react-three/fiber": "^8.9.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
