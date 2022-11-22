@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
 import { Group } from "three";
@@ -30,15 +30,19 @@ export function FugantModel(props: JSX.IntrinsicElements["group"]) {
     ref.current.rotation.y += 0.01;
   });
 
-  const { width, ..._ } = useWindowSize();
+  const { width, height } = useWindowSize();
+
+  const [scaling, setScaling] = useState(
+    width * 0.0007 > 1 ? 1 : width * 0.0007
+  );
+
+  useEffect(() => {
+    if (width < 1024) setScaling(height * 0.0009 > 1 ? 1 : height * 0.0009);
+    else setScaling(width * 0.0007 > 1 ? 1 : width * 0.0007);
+  }, [width]);
 
   return (
-    <group
-      ref={ref}
-      {...props}
-      dispose={null}
-      scale={width * 0.0007 > 1 ? 1 : width * 0.0007}
-    >
+    <group ref={ref} {...props} dispose={null} scale={scaling}>
       <group rotation={[0, 0, Math.PI / 2]} scale={[3.55, 0.87, 2.65]}>
         <mesh geometry={nodes.Cube002_1.geometry}>
           <meshStandardMaterial attach="material" color="rgb(255, 255, 255)" />
