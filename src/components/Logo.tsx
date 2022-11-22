@@ -1,7 +1,7 @@
 const Logo = ({ opacity = 1 }: { opacity?: number }) => {
   return (
     <svg
-      className="fixed w-1/4 md:w-1/6 xl:w-1/12 mt-[10px] mr-[30px] right-0 z-10"
+      className="fixed w-1/6 xl:w-1/12 mt-[10px] mr-[30px] right-0 z-10"
       fill="#FFFFFF"
       opacity={opacity}
       viewBox="0 0 64 28"
