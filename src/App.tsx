@@ -16,7 +16,7 @@ export default function App() {
   };
 
   return (
-    <div className="font-poppins snap-y w-screen h-screen snap-proximity overflow-scroll overflow-x-hidden">
+    <div className="font-poppins w-screen h-screen overflow-scroll overflow-x-hidden">
       <Logo opacity={headingVisible ? undefined : 0.1} />
       <MainSection ref={headingRef} />
       <ProductSection />
