@@ -1,3 +1,4 @@
+import Feature from "./Feature";
 import ModelDisplay from "./ModelDisplay";
 
 const ProductSection = () => {
@@ -12,6 +13,14 @@ const ProductSection = () => {
           El dispositivo es totalmente configurable mediante un portal web. Al
           momento de detectar gas en su hogar se le notificará a su celular.
         </p>
+        <div className="flex flex-col px-6 pt-8 gap-5">
+          <Feature icon="mdi:mixer-settings" text="Configurable" />
+          <Feature
+            icon="material-symbols:notification-important-sharp"
+            text="Notificaciones Moviles"
+          />
+          <Feature icon="bxs:wrench" text="Facil Instalacion" />
+        </div>
       </div>
     </section>
   );
