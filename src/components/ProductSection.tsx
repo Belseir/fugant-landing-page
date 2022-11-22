@@ -14,12 +14,16 @@ const ProductSection = () => {
           momento de detectar gas en su hogar se le notificará a su celular.
         </p>
         <div className="flex flex-col px-6 pt-8 gap-5">
-          <Feature icon="mdi:mixer-settings" text="Configurable" />
-          <Feature
-            icon="material-symbols:notification-important-sharp"
-            text="Notificaciones Moviles"
-          />
-          <Feature icon="bxs:wrench" text="Facil Instalacion" />
+          <Feature icon="mdi:mixer-settings">Configurable</Feature>
+          <Feature icon="material-symbols:notification-important-sharp">
+            Notificaciones Moviles
+          </Feature>
+          <Feature icon="bxs:wrench">Facil Instalacion</Feature>
+          <Feature icon="ph:ruler-fill">
+            64<span className="text-lg">mm</span> X 48
+            <span className="text-lg">mm</span> X 44
+            <span className="text-lg">mm</span>
+          </Feature>
         </div>
       </div>
     </section>
